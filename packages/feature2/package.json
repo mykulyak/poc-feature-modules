@@ -1,0 +1,24 @@
+{
+  "name": "@pocfm/feature2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc -p tsconfig.json",
+    "build:watch": "npx tsc -w -p tsconfig.json",
+    "clean": "rimraf ./build",
+    "prepare": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "dependencies": {
+    "typescript": "^4.2.3"
+  }
+}

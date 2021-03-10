@@ -1,0 +1,20 @@
+{
+  "packages": ["packages/*"],
+  "command": {
+    "bootstrap": {
+      "includeDependencies": true
+    },
+    "run": {
+      "stream": true
+    }
+  },
+  "hoist": [
+    "npm-run-all",
+    "lerna",
+    "react",
+    "react-dom",
+    "react-router",
+    "react-router-dom"
+  ],
+  "version": "0.0.0"
+}

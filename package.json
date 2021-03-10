@@ -1,0 +1,33 @@
+{
+  "name": "poc-feature-modules",
+  "version": "1.0.0",
+  "description": "A POC of composite app (shell + feature modules)",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "npm install && npx lerna bootstrap",
+    "dev": "npx run-p dev:app dev:core dev:feature1 dev:feature2 dev:feature3",
+    "dev:app": "npx lerna exec --scope @pocfm/app -- npm start",
+    "dev:core": "npx lerna exec --scope @pocfm/core --stream -- npm run build:watch",
+    "dev:feature1": "npx lerna exec --scope @pocfm/feature1 --stream -- npm run build:watch",
+    "dev:feature2": "npx lerna exec --scope @pocfm/feature2 --stream -- npm run build:watch",
+    "dev:feature3": "npx lerna exec --scope @pocfm/feature3 --stream -- npm run build:watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mykulyak/poc-feature-modules.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Andriy Mykulyak",
+    "email": "mykulyak@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mykulyak/poc-feature-modules/issues"
+  },
+  "homepage": "https://github.com/mykulyak/poc-feature-modules#readme",
+  "dependencies": {
+    "lerna": "^4.0.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
