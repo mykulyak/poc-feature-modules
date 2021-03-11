@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import context from "@pocfm/core";
+import context from "@pocfm/core/build";
 
 import LoginButton from "./LoginButton";
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import context from '@pocfm/core';
+import context from '@pocfm/core/build';
 import registeModule1 from '@pocfm/feature1/build';
 import registeModule2 from '@pocfm/feature2/build';
 import registeModule3 from '@pocfm/feature3/build';
