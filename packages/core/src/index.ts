@@ -1,7 +1,7 @@
 import EventEmitter from 'events';
-import type { ComponentType } from 'react';
+import { ComponentType } from 'react';
 
-export type LazyComponentLoader = () => Promise<ComponentType>;
+export type LazyComponentLoader = () => Promise<{ default: ComponentType }>;
 export type ModuleInfo = object;
 export type MenuEntry = { text: string; urlExp: string };
 export type RouteEntry = { urlExp: string; component: LazyComponentLoader};
@@ -40,3 +40,4 @@ class AppContext {
 const context = new AppContext();
 
 export default context;
+export type Context = typeof context;
